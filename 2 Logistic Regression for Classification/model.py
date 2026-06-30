@@ -67,7 +67,7 @@ def evaluate(model, X_test, y_test):
     report = classification_report(y_test, y_pred, target_names=["No", "Yes"])
 
     print(f"Accuracy: {acc:.4f}")
-    print(f"ROC‑AUC: {auc:.4f}\n")
+    print(f"ROC-AUC: {auc:.4f}\n")
     print("Classification Report:\n", report)
 
     fpr, tpr, _ = roc_curve(y_test, y_proba)
